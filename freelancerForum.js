@@ -82,3 +82,15 @@ function randomElement(arr){
     const index = Math.floor(Math.random() * arr.length)
     return arr[index]
 }
+
+function insertFreelancer(){
+    const insertedName = document.getElementById("insertedName").value
+    const insertedOccupation = document.getElementById("insertedOccupation").value
+    const insertedStrtPrice = document.getElementById("insertedStrtPrice").value
+    freelancers.push({ 
+        name: insertedName, 
+        strtPrice: insertedStrtPrice, 
+        occupation: insertedOccupation
+    }); 
+    render();
+}
